@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project( BCD )
+find_package( OpenCV REQUIRED )
+add_executable( BCD BCD.cpp )
+add_executable( spline spline.cpp )
+target_link_libraries( BCD ${OpenCV_LIBS} )
+target_link_libraries( spline ${OpenCV_LIBS} )
