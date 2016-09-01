@@ -114,7 +114,9 @@ void simpleDecomposition(cv::Mat img, cv::Mat predicted, pdd roadColor){
 			}
 		}
 	}
-	string s = "disp_"+to_string(roadID);
+	stringstream out;
+	out << roadID;
+	string s = "disp_"+out.str();
 	//cv::cvtColor(disp,disp,CV_HSV2BGR);
 	cv::imshow("disp",disp);
 	cv::waitKey(5);
@@ -179,7 +181,9 @@ void linearDecomposition(cv::Mat img, cv::Mat means){
 		}
 	}
 	for(int i=0;i<means.rows;i++){
-		string s = "disp-"+to_string(i);
+		stringstream out;
+		out << i;
+		string s = "disp-"+out.str();
 		cv::imshow(s,disp[i]);
 		cv::waitKey(0);
 		cv::imwrite(s+".jpg",disp[i]);
