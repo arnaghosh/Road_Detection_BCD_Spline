@@ -8,3 +8,9 @@ List of papers:
 + [HSV-based lane detection - results clearly shown](https://thesai.org/Downloads/Volume2No5/Paper%2012-A%20robust%20multi%20color%20lane%20marking%20detection%20approach%20for%20Indian%20scenario.pdf)
 + [fuzzy-based rural road detection - looks a good paper for result comparison on some images](http://www.sersc.org/journals/IJSIP/vol6_no6/15.pdf)
 + [k-means based clustering + memory of roads - the C part of section should be integrated into our model -> here they use k-means clustering but EM uses k-means for initialisation of gaussain estimate and then iterates to improve the parameters, therefore better](http://robots.stanford.edu/papers/dahlkamp.adaptvision06.pdf)
+
+
+
+Some to Dos for results and possible modifications:
++ Check for speed of processing and use EM::train_startWithE after first frame using the means and covariances of previous training
++ Try and see what happens if we use EM in susequent frames to predict road pixels using the area predicted as road in the previous image
