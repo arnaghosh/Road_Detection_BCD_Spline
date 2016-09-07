@@ -8,6 +8,7 @@ List of papers:
 + [HSV-based lane detection - results clearly shown](https://thesai.org/Downloads/Volume2No5/Paper%2012-A%20robust%20multi%20color%20lane%20marking%20detection%20approach%20for%20Indian%20scenario.pdf)
 + [fuzzy-based rural road detection - looks a good paper for result comparison on some images](http://www.sersc.org/journals/IJSIP/vol6_no6/15.pdf)
 + [k-means based clustering + memory of roads - the C part of section should be integrated into our model -> here they use k-means clustering but EM uses k-means for initialisation of gaussain estimate and then iterates to improve the parameters, therefore better](http://robots.stanford.edu/papers/dahlkamp.adaptvision06.pdf)
++ [good previous work section here](http://cdn.intechopen.com/pdfs-wm/46518.pdf)
 
 
 
